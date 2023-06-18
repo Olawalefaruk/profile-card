@@ -1,0 +1,146 @@
+body,
+h1,
+h2,
+.age,
+.background,
+.combine,
+.line-div,
+.pattern-div,
+.profile-image,
+.span,
+ul,
+li,
+.minor-2,
+.minor,
+.text-div {
+  margin: 0;
+  font-family: arial;
+}
+
+
+.background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(5, 135, 138, 0.933);
+  position: relative;
+ }
+
+ .minor {
+  content: url(./bg-pattern-top.svg);
+  position: absolute;
+  height: 500px;
+  top: -150px;
+  left: -100px;
+}
+
+.minor-2 {
+  content: url(./bg-pattern-bottom.svg);
+  position: absolute;
+  height: 500px;
+  bottom: -280px;
+  right: -10px;
+}
+
+
+
+.combine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: auto;
+  max-width: 200px;
+  position: relative;
+  border-radius: 5px;
+  z-index: 100;
+}
+
+.pattern-div {
+  content: url(./bg-pattern-card.svg);
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.profile-image {
+  height: 40px;
+  border-radius: 40px;
+  border: 3px solid white;
+  position: absolute;
+  top: 56px;
+}
+
+.text-div {
+ width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 30px;
+  
+}
+.age {
+  color: gray;
+  font-weight: 500;
+
+}
+h2 {
+  text-align: center;
+  font-size: 10px;
+  padding-top: 5px;
+  color: gray;
+  font-weight: 500;
+}
+
+.line-div {
+  height: 1px;
+  background-color: rgb(227, 227, 227);
+  margin-top: 20px;
+}
+
+ul {
+  display: flex;
+  max-width: 200px;
+  font-weight: 600;
+  padding: 0 20px;
+  line-height: 9px;
+}
+
+li {
+  width: 40%;
+  display: inline-block;
+  padding: 10px;
+  font-size: 8px;
+  text-align: center;
+  font-weight: 800;
+
+}
+.span {
+  color: gray;
+  font-size: 5px;
+  letter-spacing: 2px;
+}
+
+@media (orientation: portrait) {
+  .minor {
+    content: url(./bg-pattern-top.svg);
+    position: absolute;
+    height: 280px;
+    top: 0px;
+    left: -70px;
+  }
+  
+  .minor-2 {
+    content: url(./bg-pattern-bottom.svg);
+    position: absolute;
+    height: 280px;
+    bottom: 0px;
+    right: -70px;
+  }
+}
+
+
