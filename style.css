@@ -17,6 +17,12 @@ li,
   font-family: arial;
 }
 
+body {
+  background: url(./bg-pattern-top.svg), url(./bg-pattern-bottom.svg);
+  background-position: right 42vw bottom 35vh, left 30vw top 52vh;
+  background-repeat: no-repeat, no-repeat;
+  background-color: hsl(185deg, 75%, 39%);
+}
 
 .background {
   display: flex;
@@ -24,27 +30,8 @@ li,
   justify-content: center;
   width: 100%;
   min-height: 100vh;
-  background-color: rgba(5, 135, 138, 0.933);
   position: relative;
  }
-
- .minor {
-  content: url(./bg-pattern-top.svg);
-  position: absolute;
-  height: 500px;
-  top: -150px;
-  left: -100px;
-}
-
-.minor-2 {
-  content: url(./bg-pattern-bottom.svg);
-  position: absolute;
-  height: 500px;
-  bottom: -280px;
-  right: -10px;
-}
-
-
 
 .combine {
   display: flex;
@@ -126,20 +113,11 @@ li {
 }
 
 @media (orientation: portrait) {
-  .minor {
-    content: url(./bg-pattern-top.svg);
-    position: absolute;
-    height: 280px;
-    top: 0px;
-    left: -70px;
-  }
-  
-  .minor-2 {
-    content: url(./bg-pattern-bottom.svg);
-    position: absolute;
-    height: 280px;
-    bottom: 0px;
-    right: -70px;
+  body {
+    background: url(./bg-pattern-top.svg), url(./bg-pattern-bottom.svg);
+    background-position: right 32vw bottom 30vh, left 15vw top 42vh;
+    background-repeat: no-repeat, no-repeat;
+    background-color: hsl(185deg, 75%, 39%);
   }
 }
 
